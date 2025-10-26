@@ -1,0 +1,6 @@
+.layout {
+	@apply
+		w-full h-full
+		select-none
+	;
+}

@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+
+/* components */
+@import './components/layout.css';
+
+/* ui */
+@import './ui/index.css';
+
+
+/* main */
+
+html, body, #root {
+	@apply
+		w-full h-full
+	;
+	font-family: Rubik;
+}
+
+body {
+	@apply
+		bg-bg text-text
+		cursor-default
+	;
+}

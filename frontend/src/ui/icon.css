@@ -1,0 +1,11 @@
+.ui-icon {
+	@apply
+		block w-full h-full
+	;
+}
+
+.ui-icon svg{
+	@apply
+		w-full h-full stroke-[1.6]
+	;
+}

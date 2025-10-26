@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    src: local(""),
+    url("/fonts/Montserrat.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    src: local(""),
+    url("/fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    src: local(""),
+    url("/fonts/Rubik.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    src: local(""),
+    url("/fonts/Rubik-Italic.ttf") format("truetype");
+}
+
+@theme {
+	/* colors */
+	--color-bg: oklch(96% 0 0);
+	--color-bg-second: oklch(94% 0 0);
+
+	--color-text: var(--color-neutral-800)
+}
