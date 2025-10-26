@@ -37,10 +37,16 @@
 	/* colors */
 	--color-bg: oklch(96% 0 0);
 	--color-bg-second: oklch(94% 0 0);
+	--color-bg-foreground: oklch(89% 0 0);
 
 	--color-text: var(--color-neutral-800);
 
+	--color-primary: var(--color-sky-500);
+
 	/* sizes */
 	--spacing-title: 38px;
-	--spacing-nav: 46px;
+	--spacing-nav: 42px;
+
+	--spacing-input-h: 24px; 
+	--spacing-input-w: 28px; 
 }
