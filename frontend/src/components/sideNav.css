@@ -6,19 +6,55 @@
 
 .side-nav-links {
 	@apply
-		border-r w-auto h-full flex flex-col
-	;
-}
-
-.side-nav-links-header {
-	@apply
-		w-full h-title
+		border-r 
+		w-nav h-full 
+		flex flex-col
 	;
 }
 
 .side-nav-links-main {
 	@apply
 		w-auto
+		flex-1
+		flex flex-col
+	;
+}
+
+.side-nav-link {
+	@apply
+		relative w-full h-title flex items-center justify-center p-2 text-neutral-500
+		hover:text-neutral-900 pl-[calc(1px+var(--spacing)*2)]
+	;
+}
+
+.side-nav-link.with-border {
+	@apply
+		border-b
+		pt-[calc(1px+var(--spacing)*2)]
+	;
+}
+
+.side-nav-link.active {
+	@apply
+		text-neutral-900
+	;
+}
+
+.side-nav-link > .indicator {
+	@apply
+		absolute left-0 top-0 w-[3px] h-full hidden bg-sky-500
+	;
+}
+
+.side-nav-link.active > .indicator {
+	@apply
+		block
+	;
+}
+
+.side-nav-content {
+	@apply
+		h-full
 		flex-1
 	;
 }

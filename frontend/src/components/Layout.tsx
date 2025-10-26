@@ -3,6 +3,7 @@ import { createSignal, onMount } from "solid-js"
 import Icon from "../ui/Icon"
 import { SideNav } from "./SideNav"
 import { Tabs } from "./Tabs"
+import { Browser } from "./Browser"
 
 export default function Layout(props) {
 	
@@ -17,7 +18,9 @@ export default function Layout(props) {
 	//
 	return (
 		<div class="layout">
-			<SideNav />
+			<SideNav>
+				<Browser />
+			</SideNav>
 			<div class="workspace">
 				<div class="title-bar">
 					<Tabs />
