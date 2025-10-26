@@ -1,0 +1,8 @@
+.ui-icon-button {
+	@apply
+		w-input-w h-input-h p-0.5
+		flex items-center justify-center
+		rounded 
+		hover:bg-bg-foreground
+	;
+}
