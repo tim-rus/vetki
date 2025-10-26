@@ -2,5 +2,38 @@
 	@apply
 		w-full h-full
 		select-none
+		flex items-stretch
+	;
+}
+
+.workspace {
+	@apply
+		flex-1
+		flex flex-col
+	;
+}
+
+.title-bar {
+	@apply
+		w-full h-title flex items-center
+		bg-bg-second
+	;
+}
+
+.title-rest {
+	@apply
+		h-full flex-1 min-w-4 border-b
+	;
+}
+
+.window-controls {
+	@apply
+		w-max h-full flex items-center border-b
+	;
+}
+
+.content {
+	@apply
+		w-full flex-1
 	;
 }

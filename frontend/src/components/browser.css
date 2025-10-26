@@ -1,0 +1,26 @@
+.browser {
+	@apply
+		w-auto h-full
+		bg-bg-second
+		flex flex-col
+	;
+}
+
+.browser-header {
+	@apply
+		w-full h-title
+		border-b
+	;
+}
+
+.browser-content {
+	@apply
+		w-full flex-1
+	;
+}
+
+.browser-footer {
+	@apply
+		w-full
+	;
+}

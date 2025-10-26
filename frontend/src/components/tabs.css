@@ -1,0 +1,22 @@
+.tabs {
+	@apply
+		w-max h-title flex items-stretch
+	;
+}
+
+.tab {
+	@apply
+		w-max flex items-center
+		text-sm leading-none
+		px-2 border-r border-b
+		cursor-pointer
+		hover:bg-bg
+	;
+}
+
+.tab.active {
+	@apply
+		bg-bg
+		border-b-transparent
+	;
+}

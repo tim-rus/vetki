@@ -4,6 +4,9 @@
 
 /* components */
 @import './components/layout.css';
+@import './components/sideNav.css';
+@import './components/browser.css';
+@import './components/tabs.css';
 
 /* ui */
 @import './ui/index.css';

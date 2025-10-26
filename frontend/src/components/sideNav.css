@@ -1,0 +1,24 @@
+.side-nav {
+	@apply
+		w-auto flex items-stretch border-r
+	;
+}
+
+.side-nav-links {
+	@apply
+		border-r w-auto h-full flex flex-col
+	;
+}
+
+.side-nav-links-header {
+	@apply
+		w-full h-title
+	;
+}
+
+.side-nav-links-main {
+	@apply
+		w-auto
+		flex-1
+	;
+}

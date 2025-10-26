@@ -35,7 +35,8 @@ func main() {
 			Backdrop:                application.MacBackdropTranslucent,
 			TitleBar:                application.MacTitleBarHiddenInset,
 		},
-		URL: "/",
+		URL:       "/",
+		Frameless: true,
 	})
 
 	err := app.Run()

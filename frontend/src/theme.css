@@ -27,10 +27,19 @@
     url("/fonts/Rubik-Italic.ttf") format("truetype");
 }
 
+* {
+	@apply
+		border-neutral-300
+	;
+}
+
 @theme {
 	/* colors */
 	--color-bg: oklch(96% 0 0);
 	--color-bg-second: oklch(94% 0 0);
 
-	--color-text: var(--color-neutral-800)
+	--color-text: var(--color-neutral-800);
+
+	/* sizes */
+	--spacing-title: 36px;
 }
