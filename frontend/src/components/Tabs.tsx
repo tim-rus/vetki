@@ -17,6 +17,9 @@ interface TabProps {
 
 const Tab: Component<TabProps> = props => {
 	return (
-		<div class={"tab" + (props.active ? ' active' : '')}>Tab</div>
+		<div class={"tab" + (props.active ? ' active' : '')}>
+			<div class="indicator"></div>
+			Tab
+		</div>
 	)
 }

@@ -6,9 +6,9 @@
 
 .tab {
 	@apply
-		w-max flex items-center
+		relative w-max flex items-center
 		text-sm leading-none
-		px-2 border-r border-b
+		px-2 border-r border-y border-t-transparent
 		cursor-pointer
 		hover:bg-bg
 	;
@@ -18,5 +18,19 @@
 	@apply
 		bg-bg
 		border-b-transparent
+	;
+}
+
+.tab > .indicator {
+	@apply
+		bg-transparent
+		block absolute
+		top-0 left-0 w-full h-0.5
+	;
+}
+
+.tab.active > .indicator {
+	@apply
+		bg-primary
 	;
 }
