@@ -3,13 +3,14 @@
 		w-auto h-full
 		bg-bg-second
 		flex flex-col
+		border-r py-2 px-3.5
+		text-sm
 	;
 }
 
-.browser-header {
+.browser.hide {
 	@apply
-		w-full h-title
-		border-b
+		hidden
 	;
 }
 
@@ -18,9 +19,19 @@
 		w-full flex-1
 	;
 }
+/* handle */
 
-.browser-footer {
+.browser-handle {
 	@apply
-		w-full
+		z-50 fixed h-full w-1 top-0 hover:bg-primary
+		cursor-col-resize 
+		transition-colors delay-100
+	;
+}
+
+.browser-handle.active {
+	@apply
+		bg-primary
+		transition-colors delay-100
 	;
 }

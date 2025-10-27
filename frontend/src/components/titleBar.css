@@ -1,0 +1,101 @@
+/* title bar */
+
+.title-bar {
+	@apply
+		w-full h-title flex items-center
+		bg-bg-second
+		z-10
+	;
+}
+
+/* title group */
+
+.title-group {
+	@apply
+		w-auto h-full 
+		border border-t-transparent border-l-transparent
+		flex items-center
+	;
+}
+
+/* title-panel */
+
+.title-show-collapse {
+	@apply
+		w-nav h-full
+		flex items-center justify-center
+	;
+}
+
+/* title project */
+
+.title-project {
+	@apply
+		h-full flex-1 
+		flex items-center gap-2
+	;
+}
+
+.title-project.hide {
+	@apply
+		hidden
+	;
+}
+
+.project-selector {
+	@apply
+		flex-1 h-input-h
+		rounded hover:bg-bg-foreground 
+		text-sm
+		flex items-center gap-1
+		pr-2 pl-1
+	;
+}
+
+.project-selector > .ui-icon {
+	@apply
+		h-3 w-3
+	;
+}
+
+.project-controls {
+	@apply
+		w-max flex items-center gap-1 pr-2
+	;
+}
+
+/* window controls */
+
+.window-controls {
+	@apply
+		w-max h-full flex items-center border-y border-t-transparent
+	;
+}
+
+.window-controls > * {
+	@apply
+		h-full flex items-center justify-center p-2.5
+		hover:bg-neutral-300
+	;
+}
+
+.window-controls > .danger {
+	@apply
+		hover:bg-red-500 hover:text-white
+	;
+}
+
+.window-controls > .flip {
+	@apply
+		-scale-x-100
+	;
+}
+
+/* rest */
+
+.title-rest {
+	@apply
+		h-full flex-1 min-w-4 border-b
+	;
+	--wails-draggable: drag;
+}

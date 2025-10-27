@@ -3,17 +3,33 @@ import { createStore, produce } from "solid-js/store";
 
 interface State {
 	test:string
+
+	//
+	window: {
+		browserMinWidth: number
+		browserWidth: number
+		browserShow: boolean
+	}
 }
 
 interface StateUpdateType {
 	makeChange():void
+
+	//
+	browserToggle():void
+	browserSetWidth(w:number): void
 }
 
 const StateContext = createContext<{ state:State, update:StateUpdateType }>();
 
 export function StateProvider(props) {
 	const [state, setState] = createStore<State>({
-		test: "SOME"
+		test: "SOME",
+		window: {
+			browserWidth: 320,
+			browserMinWidth: 200,
+			browserShow: true
+		}
 	} as State)
 
 	const update = {
@@ -23,7 +39,21 @@ export function StateProvider(props) {
 					s.test = "CHANGE"
 				})
 			)
-		}
+		},
+		browserSetWidth(w:number) {
+			setState(
+				produce((s:State)=>{
+					s.window.browserWidth = w
+				})
+			)
+		},
+		browserToggle() {
+			setState(
+				produce((s:State)=>{
+					s.window.browserShow = !s.window.browserShow
+				})
+			)
+		},
 	} as StateUpdateType
 
 	return (

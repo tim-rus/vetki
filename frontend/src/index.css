@@ -4,7 +4,7 @@
 
 /* components */
 @import './components/layout.css';
-@import './components/sideNav.css';
+@import './components/titleBar.css';
 @import './components/browser.css';
 @import './components/tabs.css';
 

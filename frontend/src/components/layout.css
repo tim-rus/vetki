@@ -1,55 +1,18 @@
 .layout {
 	@apply
-		w-full h-full
+		relative w-full h-full
 		select-none
-		flex items-stretch
+		flex flex-col items-stretch
 	;
 }
 
 .workspace {
 	@apply
 		flex-1
-		flex flex-col
+		flex items-stretch
 	;
 }
 
-.title-bar {
-	@apply
-		w-full h-title flex items-center
-		bg-bg-second
-	;
-}
-
-.title-rest {
-	@apply
-		h-full flex-1 min-w-4 border-b
-	;
-}
-
-.window-controls {
-	@apply
-		w-max h-full flex items-center border-b
-	;
-}
-
-.window-controls > * {
-	@apply
-		h-full flex items-center justify-center p-2
-		hover:bg-neutral-300
-	;
-}
-
-.window-controls > .danger {
-	@apply
-		hover:bg-red-500 hover:text-white
-	;
-}
-
-.window-controls > .flip {
-	@apply
-		-scale-x-100
-	;
-}
 
 .content {
 	@apply
